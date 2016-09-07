@@ -1,0 +1,34 @@
+//Christine Negron example2-2
+
+
+
+
+void setup(){
+  
+ size(480,120);
+ background(60,20,120);
+ smooth();
+  
+}
+
+void draw(){
+ 
+  //when mouse is pressed the ellipse color is random
+ if (mousePressed) {
+  fill (random(20,255),random(20,255),random(20,255));
+ }
+ 
+ 
+ //when not pressed at allit is white
+ else {
+   fill(255);
+ }
+ ellipse(mouseX, mouseY, 80,80);
+
+ 
+ //When key is pressed it clears the background
+ if (keyPressed){  
+background(60,20,120);
+}
+  
+}
